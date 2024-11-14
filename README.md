@@ -24,14 +24,14 @@ the development of Cost-Free Adversarial Multi-Crop Self-Supervised Learning (CF
 <p align="center">
 <img src="./figures/Sim.jpg" alt="Alt Text" width="500">
  <br>
- <em><strong>Figure 1(a) The adversarially trained SimCLR vs. free adversarially trained
+ <em><strong>The adversarially trained SimCLR vs. free adversarially trained
 SimCLR framework.</strong></em>
 </p>
 
 <p align="center">
 <img src="./figures/Emp.jpg" alt="Alt Text" width="500">
   <br>
-  <em><strong>Figure 1(b) the adversarially trained crop-based EMP-SSL framework vs.
+  <em><strong>The adversarially trained crop-based EMP-SSL framework vs.
 the free adversarially trained crop-based EMP-SSL (CF-AMC-
 SSL).</strong></em>
 </p>
