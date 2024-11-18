@@ -77,15 +77,13 @@ python main_empssl_free_adv.py
 ```
 python evaluate_empssl.py
 ```
-## Results
-
 ## Comparison of Models
 
 **CF-AMC-SSL trains efficiently in fewer epochs, thereby reducing overall training time. By effectively employing multi-crop augmentations during base encoder training, it enhances both clean accuracy and robustness against PGD attacks.**  
 
 
 <p align="center">
-<img src="./figures/results.png" alt="Alt Text" width="900">
+<img src="./figures/results.png" alt="Alt Text" width="950">
  <br>
  <em><strong>Note that the highest values are indicated in red, while the second highest values are highlighted in
 blue.</strong></em>
