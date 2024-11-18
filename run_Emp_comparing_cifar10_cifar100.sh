@@ -27,7 +27,7 @@ for test_patches in "${test_patches_values[@]}"; do
                 data="cifar100"
             fi
             echo "Running with test_patches = $test_patches, model_path = $model_path, data = $tdata, scale_min = $scale_min, scale_max = $scale_max, ratio_min = $ratio_min, ratio_max = $ratio_max"
-            python evaluate_SMPSSL.py --data "$data" --test_patches "$test_patches" --model_path "$model_path" --type "$type" --scale_min "$scale_min" --scale_max "$scale_max" --ratio_min "$ratio_min" --ratio_max "$ratio_max" >> test_results_EMP_comparing_cifar100_cifar10_v3.txt
+            python evaluate_EMPSSL.py --data "$data" --test_patches "$test_patches" --model_path "$model_path" --type "$type" --scale_min "$scale_min" --scale_max "$scale_max" --ratio_min "$ratio_min" --ratio_max "$ratio_max" >> test_results_EMP_comparing_cifar100_cifar10_v3.txt
             ((iteration++))
 
     done
