@@ -77,7 +77,7 @@ python main_empssl_free_adv.py
 ```
 python evaluate_empssl.py
 ```
-## Comparison of Models
+## Experimental Results on CIFAR-10
 
 **CF-AMC-SSL trains efficiently in fewer epochs, thereby reducing overall training time. By effectively employing multi-crop augmentations during base encoder training, it enhances both clean accuracy and robustness against PGD attacks.**  
 
