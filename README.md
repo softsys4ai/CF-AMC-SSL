@@ -85,7 +85,7 @@ python evaluate_empssl.py
 *Note: 
 
 <p align="center">
-<img src="./figures/result.jpg" alt="Alt Text" width="500">
+<img src="./figures/results.png" alt="Alt Text" width="500">
  <br>
  <em><strong>The adversarially trained SimCLR vs. free adversarially trained
 SimCLR framework.</strong></em>
