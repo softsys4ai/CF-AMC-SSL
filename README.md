@@ -97,102 +97,21 @@ blue.</strong></em>
 <div>
 
 
- ### Comparison of Methods
-
 ### Comparison of Methods
 
 We evaluate several methods on CIFAR-10, CIFAR-100, and training time. Note that the highest values are in **red**, and the second-highest values are in **blue**.
 
-### Comparison of Methods
+| **Models** | **CIFAR-10 Clean** | **CIFAR-10 PGD(4/255)** | **CIFAR-10 PGD(8/255)** | **CIFAR-100 Clean** | **CIFAR-100 PGD(4/255)** | **CIFAR-100 PGD(8/255)** | **Time (min)** |
+|------------|--------------------|-------------------------|-------------------------|---------------------|--------------------------|--------------------------|----------------|
+| **Patch-based EMP-SSL** (16 patches, 30 epochs) | 61 | 37.65 | 16.95 | 39.26 | 14.38 | 4.22 | 530 |
+| **Crop-based EMP-SSL** (16 crops, 30 epochs) | <span style="color:red;">76.55</span> | <span style="color:red;">53.3</span> | <span style="color:red;">28.49</span> | <span style="color:red;">51.71</span> | <span style="color:red;">33.88</span> | <span style="color:red;">19.35</span> | 530 |
+| **Crop-based SimCLR** (2 crops, 500 epochs) | 72.86 | 47.98 | 16.81 | 44.57 | 19.84 | 5.68 | 934 |
+| **Patch-based SimCLR** (2 patches, 500 epochs)| 65.44 | 41.85 | 17.19 | 43.71 | 21.87 | 8.33 | 934 |
+| **Patch-based EMP-FreeAdv** (16 patches, 10 epochs)| 61.83 | 42.28 | 21.53 | 40.31 | 23.78 | 12.13 | <span style="color:red;">97</span> |
+| **Crop-based SimCLR-FreeAdv** (2 crops, 167 epochs)| 70.25 | 48.34 | 24.5 | 47.64 | 26.53 | 11.7 | <span style="color:blue;">157</span> |
+| **Crop-based EMP-FreeAdv (CF-AMC-SSL)** (16 crops, 10 epochs)| <span style="color:blue;">75.88</span> | <span style="color:blue;">55.97</span> | <span style="color:blue;">33.34</span> | <span style="color:blue;">50.74</span> | <span style="color:blue;">31.73</span> | <span style="color:blue;">17.19</span> | <span style="color:red;">97</span> |
 
-We evaluate several methods on CIFAR-10, CIFAR-100, and training time. Note that the highest values are in **red**, and the second-highest values are in **blue**.
 
-<table style="font-size: 12px;">
-  <thead>
-    <tr>
-      <th><b>Models</b></th>
-      <th><b>CIFAR-10 Clean</b></th>
-      <th><b>CIFAR-10 PGD(4/255)</b></th>
-      <th><b>CIFAR-10 PGD(8/255)</b></th>
-      <th><b>CIFAR-100 Clean</b></th>
-      <th><b>CIFAR-100 PGD(4/255)</b></th>
-      <th><b>CIFAR-100 PGD(8/255)</b></th>
-      <th><b>Time (min)</b></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Patch-based EMP-SSL</b> (16 patches, 30 epochs)</td>
-      <td>61</td>
-      <td>37.65</td>
-      <td>16.95</td>
-      <td>39.26</td>
-      <td>14.38</td>
-      <td>4.22</td>
-      <td>530</td>
-    </tr>
-    <tr>
-      <td><b>Crop-based EMP-SSL</b> (16 crops, 30 epochs)</td>
-      <td><b>76.55</b></td>
-      <td><b>53.3</b></td>
-      <td><b>28.49</b></td>
-      <td><b>51.71</b></td>
-      <td><b>33.88</b></td>
-      <td><b>19.35</b></td>
-      <td>530</td>
-    </tr>
-    <tr>
-      <td><b>Crop-based SimCLR</b> (2 crops, 500 epochs)</td>
-      <td>72.86</td>
-      <td>47.98</td>
-      <td>16.81</td>
-      <td>44.57</td>
-      <td>19.84</td>
-      <td>5.68</td>
-      <td>934</td>
-    </tr>
-    <tr>
-      <td><b>Patch-based SimCLR</b> (2 patches, 500 epochs)</td>
-      <td>65.44</td>
-      <td>41.85</td>
-      <td>17.19</td>
-      <td>43.71</td>
-      <td>21.87</td>
-      <td>8.33</td>
-      <td>934</td>
-    </tr>
-    <tr>
-      <td><b>Patch-based EMP-FreeAdv</b> (16 patches, 10 epochs)</td>
-      <td>61.83</td>
-      <td>42.28</td>
-      <td>21.53</td>
-      <td>40.31</td>
-      <td>23.78</td>
-      <td>12.13</td>
-      <td><b>97</b></td>
-    </tr>
-    <tr>
-      <td><b>Crop-based SimCLR-FreeAdv</b> (2 crops, 167 epochs)</td>
-      <td>70.25</td>
-      <td>48.34</td>
-      <td>24.5</td>
-      <td>47.64</td>
-      <td>26.53</td>
-      <td>11.7</td>
-      <td><b>157</b></td>
-    </tr>
-    <tr>
-      <td><b>Crop-based EMP-FreeAdv (CF-AMC-SSL)</b> (16 crops, 10 epochs)</td>
-      <td><b>75.88</b></td>
-      <td><b>55.97</b></td>
-      <td><b>33.34</b></td>
-      <td><b>50.74</b></td>
-      <td><b>31.73</b></td>
-      <td><b>17.19</b></td>
-      <td><b>97</b></td>
-    </tr>
-  </tbody>
-</table>
 
 ## Acknowledement
 This repo is inspired by [CL-Robustness](https://github.com/softsys4ai/CL-Robustness/tree/main) and [EMP-SSL](https://github.com/tsb0601/EMP-SSL) repos.
