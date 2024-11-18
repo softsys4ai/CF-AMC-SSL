@@ -36,13 +36,13 @@ the free adversarially trained crop-based EMP-SSL (CF-AMC-
 SSL).</strong></em>
 </p>
 
-<div align="center">
+<div>
 
 
 ## Running
 
-#### Standard Contrastive Learning
-##### Pretraining Stage
+### Standard Contrastive Learning
+#### Pretraining Stage
 (1) Standard Training
 ```
 python main_simclr.py
@@ -51,12 +51,12 @@ python main_simclr.py
 ```
 python main_simclr_adv.py
  ```
-##### Evaluation Stage
+#### Evaluation Stage
 ```
 python evaluate_simclr.py
  ```
-#### EMPSSL 
-##### Pretraining Stage
+### EMP-SSL: Extreme-Multi-Patch Self-Supervised-Learning  
+#### Pretraining Stage
 (1) Standard Training
 ```
 python main_empssl.py
@@ -65,7 +65,7 @@ python main_empssl.py
 ```
 python main_empssl_adv.py
  ```
-##### Evaluation Stage
+#### Evaluation Stage
 ```
 python evaluate_empssl.py
  ```
