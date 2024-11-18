@@ -88,8 +88,6 @@ We evaluate two strategies:
 - **Crop-Based Method**: This method involves random cropping of image augmentations, where the crop sizes range from 9×9 to 32×32 pixels.
 - **Patch-Based Method**: This method uses fixed-scale patches as the primary method of augmentation.
 
-## Comparison of Models
-
 **CF-AMC-SSL trains efficiently in fewer epochs, thereby reducing overall training time. By effectively employing multi-crop augmentations during base encoder training, it enhances both clean accuracy and robustness against PGD attacks.**  
 *Note: The highest values are indicated in 🔴 **red**, while the second highest values are highlighted in 🔵 **blue**.*
 | **Model**                     | **CIFAR-10**       |                      |                      | **CIFAR-100**       |                      |                      | **Time**       |
