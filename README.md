@@ -37,3 +37,35 @@ SSL).</strong></em>
 </p>
 
 <div align="center">
+
+
+## Running
+
+#### Standard Contrastive Learning
+##### Pretraining Stage
+(1) Standard Training
+```
+python main_simclr.py
+ ```
+ (2) Adversarial Training
+```
+python main_simclr_adv.py
+ ```
+##### Evaluation Stage
+```
+python evaluate_simclr.py
+ ```
+#### EMPSSL 
+##### Pretraining Stage
+(1) Standard Training
+```
+python main_empssl.py
+ ```
+ (2) Adversarial Training
+```
+python main_empssl_adv.py
+ ```
+##### Evaluation Stage
+```
+python evaluate_empssl.py
+ ```
