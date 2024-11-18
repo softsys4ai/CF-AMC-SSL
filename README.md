@@ -69,3 +69,5 @@ python main_empssl_adv.py
 ```
 python evaluate_empssl.py
  ```
+## Acknowledement
+This repo is inspired by [CL-Robustness](https://github.com/softsys4ai/CL-Robustness/tree/main) and [EMP-SSL](https://github.com/tsb0601/EMP-SSL) repos.
