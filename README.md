@@ -82,13 +82,13 @@ python evaluate_empssl.py
 ## Comparison of Models
 
 **CF-AMC-SSL trains efficiently in fewer epochs, thereby reducing overall training time. By effectively employing multi-crop augmentations during base encoder training, it enhances both clean accuracy and robustness against PGD attacks.**  
-*Note: 
+
 
 <p align="center">
-<img src="./figures/results.png" alt="Alt Text" width="500">
+<img src="./figures/results.png" alt="Alt Text" width="900">
  <br>
- <em><strong>The adversarially trained SimCLR vs. free adversarially trained
-SimCLR framework.</strong></em>
+ <em><strong>Note that the highest values are indicated in red, while the second highest values are highlighted in
+blue.</strong></em>
 </p>
 <div>
  
