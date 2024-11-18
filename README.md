@@ -99,17 +99,19 @@ blue.</strong></em>
 
  ### Comparison of Methods
 
+### Comparison of Methods
+
 We evaluate several methods on CIFAR-10, CIFAR-100, and training time. Note that the highest values are in **red**, and the second-highest values are in **blue**.
 
 | **Models** | **CIFAR-10 Clean** | **CIFAR-10 PGD(4/255)** | **CIFAR-10 PGD(8/255)** | **CIFAR-100 Clean** | **CIFAR-100 PGD(4/255)** | **CIFAR-100 PGD(8/255)** | **Time (min)** |
 |------------|--------------------|-------------------------|-------------------------|---------------------|--------------------------|--------------------------|----------------|
-| **Patch-based EMP-SSL (16 patches, 30 epochs)** | 61 | 37.65 | 16.95 | 39.26 | 14.38 | 4.22 | 530 |
-| **Crop-based EMP-SSL (16 crops, 30 epochs)** | **76.55** | **53.3** | **28.49** | **51.71** | **33.88** | **19.35** | 530 |
-| **Crop-based SimCLR (2 crops, 500 epochs)** | 72.86 | 47.98 | 16.81 | 44.57 | 19.84 | 5.68 | 934 |
-| **Patch-based SimCLR (2 patches, 500 epochs)** | 65.44 | 41.85 | 17.19 | 43.71 | 21.87 | 8.33 | 934 |
-| **Patch-based EMP-FreeAdv (16 patches, 10 epochs)** | 61.83 | 42.28 | 21.53 | 40.31 | 23.78 | 12.13 | **97** |
-| **Crop-based SimCLR-FreeAdv (2 crops, 167 epochs)** | 70.25 | 48.34 | 24.5 | 47.64 | 26.53 | 11.7 | **157** |
-| **Crop-based EMP-FreeAdv (CF-AMC-SSL) (16 crops, 10 epochs)** | **75.88** | **55.97** | **33.34** | **50.74** | **31.73** | **17.19** | **97** |
+| **Patch-based EMP-SSL** (16 patches, 30 epochs) | 61 | 37.65 | 16.95 | 39.26 | 14.38 | 4.22 | 530 |
+| **Crop-based EMP-SSL** (16 crops, 30 epochs) | **76.55** | **53.3** | **28.49** | **51.71** | **33.88** | **19.35** | 530 |
+| **Crop-based SimCLR** (2 crops, 500 epochs) | 72.86 | 47.98 | 16.81 | 44.57 | 19.84 | 5.68 | 934 |
+| **Patch-based SimCLR** (2 patches, 500 epochs) | 65.44 | 41.85 | 17.19 | 43.71 | 21.87 | 8.33 | 934 |
+| **Patch-based EMP-FreeAdv** (16 patches, 10 epochs) | 61.83 | 42.28 | 21.53 | 40.31 | 23.78 | 12.13 | **97** |
+| **Crop-based SimCLR-FreeAdv** (2 crops, 167 epochs) | 70.25 | 48.34 | 24.5 | 47.64 | 26.53 | 11.7 | **157** |
+| **Crop-based EMP-FreeAdv (CF-AMC-SSL)** (16 crops, 10 epochs) | **75.88** | **55.97** | **33.34** | **50.74** | **31.73** | **17.19** | **97** |
 
 
 ## Acknowledement
