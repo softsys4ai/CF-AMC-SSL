@@ -82,24 +82,15 @@ python evaluate_empssl.py
 ## Comparison of Models
 
 **CF-AMC-SSL trains efficiently in fewer epochs, thereby reducing overall training time. By effectively employing multi-crop augmentations during base encoder training, it enhances both clean accuracy and robustness against PGD attacks.**  
-*Note: The highest values are indicated in 🔴 **red**, while the second highest values are highlighted in 🔵 **blue**.*
+*Note: 
 
-| **Model**                     | **CIFAR-10**       |                      |                      | **CIFAR-100**       |                      |                      | **Time**       |
-|--------------------------------|--------------------|----------------------|----------------------|--------------------|----------------------|----------------------|----------------|
-| **Base Encoder**              | **Clean**         | **PGD(4/255)**      | **PGD(8/255)**      | **Clean**         | **PGD(4/255)**      | **PGD(8/255)**      | **(min)**      |
-| Patch-based EMP-SSL *(16 patches,<br>5-step PGD, 30 epochs)* | 61               | 37.65               | 16.95               | 39.26              | 14.38               | 4.22                | 530            |
-| Crop-based EMP-SSL *(16 crops,<br>5-step PGD, 30 epochs)* | 🔴 **76.55**      | 🔵 **53.3**          | 🔵 **28.49**         | 🔴 **51.71**      | 🔴 **33.88**         | 🔴 **19.35**        | 530            |
-| Crop-based SimCLR *(2 crops,<br>5-step PGD, 500 epochs)* | 72.86            | 47.98               | 16.81               | 44.57              | 19.84               | 5.68                | 934            |
-| Patch-based SimCLR *(2 patches,<br>5-step PGD, 500 epochs)* | 65.44           | 41.85               | 17.19               | 43.71              | 21.87               | 8.33                | 934            |
-| Patch-based EMP-FreeAdv *(16 patches,<br>m=3, 10 epochs)* | 61.83           | 42.28               | 21.53               | 40.31              | 23.78               | 12.13               | 🔴 **97**      |
-| Crop-based SimCLR-FreeAdv *(2 crops,<br>m=3, 167 epochs)* | 70.25           | 48.34               | 24.5                | 47.64              | 26.53               | 11.7                | 🔵 **157**     |
-| Crop-based EMP-FreeAdv *(CF-AMC-SSL)<br>(16 crops, m=3, 10 epochs)* | 🔵 **75.88** | 🔴 **55.97**         | 🔴 **33.34**         | 🔵 **50.74**      | 🔵 **31.73**         | 🔵 **17.19**        | 🔴 **97**      |
-
-### Key:
-- 🔴 **Red**: Highest values
-- 🔵 **Blue**: Second highest values
-
-
-
+<p align="center">
+<img src="./figures/result.jpg" alt="Alt Text" width="500">
+ <br>
+ <em><strong>The adversarially trained SimCLR vs. free adversarially trained
+SimCLR framework.</strong></em>
+</p>
+<div>
+ 
 ## Acknowledement
 This repo is inspired by [CL-Robustness](https://github.com/softsys4ai/CL-Robustness/tree/main) and [EMP-SSL](https://github.com/tsb0601/EMP-SSL) repos.
