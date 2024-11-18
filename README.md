@@ -51,6 +51,10 @@ python main_simclr.py
 ```
 python main_simclr_adv.py
  ```
+(3) Free Adversarial Training
+```
+python main_simclr_free_adv.py
+ ```
 #### Evaluation Stage
 ```
 python evaluate_simclr.py
@@ -65,6 +69,9 @@ python main_empssl.py
 ```
 python main_empssl_adv.py
  ```
+(3) Free Adversarial Training
+```
+python main_empssl_free_adv.py
 #### Evaluation Stage
 ```
 python evaluate_empssl.py
