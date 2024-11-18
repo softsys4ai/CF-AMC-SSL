@@ -81,7 +81,11 @@ python evaluate_empssl.py
 
 **CF-AMC-SSL trains efficiently in fewer epochs, thereby reducing overall training time. By effectively employing multi-crop augmentations during base encoder training, it enhances both clean accuracy and robustness against PGD attacks.**  
 
-
+We evaluate two strategies:
+###### Crop-Based Method
+This involves random cropping of image augmentations, where the crop sizes range from 9×9 to 32×32 pixels.
+###### Patch-Based Method
+Here, fixed-scale patches are used as the primary method of augmentation.
 <p align="center">
 <img src="./figures/results.png" alt="Alt Text" width="950">
  <br>
